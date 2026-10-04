@@ -23,27 +23,25 @@
 <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
-<a class="skip-link" href="#main">Zum Inhalt springen</a>
+<a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
 <header class="site-header">
 <div class="header-in">
 <a class="brand" href="/"><img src="/assets/img/logo-wortmarke.png" width="400" height="127" alt="MRGstudios Logo mit farbigem MRG-Monogramm und der Wortmarke MRGstudios in Dunkelblau"></a>
 <nav class="nav-desktop" aria-label="Hauptmenü">
 <ul class="nav-list">
 <li><a href="/">Home</a></li>
-<li><a href="/projekte/">Doomscroll</a></li>
-<li><a href="/faq/">FAQ</a></li>
+<li><a href="/#apps" aria-current="true">Apps</a></li>
 <li><a href="/neues/">Updates</a></li>
 <li><a href="/kontakt/">Kontakt</a></li>
 </ul>
 </nav>
-<a class="mrg-btn" href="/#download">Download</a>
+<a class="mrg-btn" href="/#apps">Alle Apps</a>
 <details class="nav-toggle">
 <summary>Menü</summary>
 <nav class="nav-panel" aria-label="Hauptmenü (mobil)">
 <ul class="nav-list">
 <li><a href="/">Home</a></li>
-<li><a href="/projekte/">Doomscroll</a></li>
-<li><a href="/faq/">FAQ</a></li>
+<li><a href="/#apps" aria-current="true">Apps</a></li>
 <li><a href="/neues/">Updates</a></li>
 <li><a href="/kontakt/">Kontakt</a></li>
 </ul>
@@ -52,7 +50,49 @@
 </div>
 </header>
 <main id="main" tabindex="-1">
-<div class="wrap">
+<div class="app-shell">
+<aside class="app-side" aria-label="Apps">
+<p class="app-side-title">Apps</p>
+<nav aria-label="App wählen">
+<ul class="app-list">
+<li><a class="app-item is-active" href="/doomscroll/" aria-current="true"><span class="app-badge" aria-hidden="true" style="--b1:#8541AB;--b2:#222561">DS</span><span class="app-item-text"><span class="app-item-name">Doomscroll</span><span class="app-item-short">Erst bewegen, dann scrollen.</span></span></a></li>
+<li><a class="app-item" href="/mehr-oder-weniger/"><span class="app-badge app-badge-img" aria-hidden="true"><img src="/assets/img/mow-icon-128.png" width="128" height="128" loading="lazy" alt=""></span><span class="app-item-text"><span class="app-item-name">Mehr oder Weniger</span><span class="app-item-short">Kartenspiel für Android.</span></span></a></li>
+</ul>
+</nav>
+<p class="app-side-title app-side-sub">Seiten: Doomscroll</p>
+<nav aria-label="Seiten von Doomscroll">
+<ul class="app-sublist">
+<li><a href="/doomscroll/">Überblick</a></li>
+<li><a href="/doomscroll/details/">Details</a></li>
+<li><a href="/doomscroll/faq/">FAQ</a></li>
+<li><a href="/app-datenschutz/doomscroll/">Datenschutz der App</a></li>
+<li><a href="/agbs-doomscroll/" aria-current="page">AGB</a></li>
+</ul>
+</nav>
+</aside>
+<div class="app-main" id="inhalt" tabindex="-1">
+<details class="app-switcher">
+<summary>App wählen: Doomscroll</summary>
+<div class="app-switcher-panel">
+<p class="app-side-title">Apps</p>
+<nav aria-label="App wählen">
+<ul class="app-list">
+<li><a class="app-item is-active" href="/doomscroll/" aria-current="true"><span class="app-badge" aria-hidden="true" style="--b1:#8541AB;--b2:#222561">DS</span><span class="app-item-text"><span class="app-item-name">Doomscroll</span><span class="app-item-short">Erst bewegen, dann scrollen.</span></span></a></li>
+<li><a class="app-item" href="/mehr-oder-weniger/"><span class="app-badge app-badge-img" aria-hidden="true"><img src="/assets/img/mow-icon-128.png" width="128" height="128" loading="lazy" alt=""></span><span class="app-item-text"><span class="app-item-name">Mehr oder Weniger</span><span class="app-item-short">Kartenspiel für Android.</span></span></a></li>
+</ul>
+</nav>
+<p class="app-side-title app-side-sub">Seiten: Doomscroll</p>
+<nav aria-label="Seiten von Doomscroll">
+<ul class="app-sublist">
+<li><a href="/doomscroll/">Überblick</a></li>
+<li><a href="/doomscroll/details/">Details</a></li>
+<li><a href="/doomscroll/faq/">FAQ</a></li>
+<li><a href="/app-datenschutz/doomscroll/">Datenschutz der App</a></li>
+<li><a href="/agbs-doomscroll/" aria-current="page">AGB</a></li>
+</ul>
+</nav>
+</div>
+</details>
 
 <div class="page-head"><h1>Allgemeine Geschäftsbedingungen (AGBs) zu der App Doomscroll</h1></div>
 <div class="prose">
@@ -93,7 +133,7 @@
 <li><p>Die Haftung für Schäden aus der Verletzung des Lebens, des Körpers oder der Gesundheit bleibt von den vorstehenden Haftungsbeschränkungen unberührt.</p></li>
 </ol>
 <h2>§ 7 Datenschutz</h2>
-<p>Die Erhebung und Verarbeitung personenbezogener Daten erfolgt gemäß der Datenschutzerklärung der App, die innerhalb der App sowie unter <a href="/app-datenschutz/">www.mrgstudios.de</a> einsehbar ist.</p>
+<p>Die Erhebung und Verarbeitung personenbezogener Daten erfolgt gemäß der Datenschutzerklärung der App, die innerhalb der App sowie unter <a href="/app-datenschutz/doomscroll/">www.mrgstudios.de</a> einsehbar ist.</p>
 <h2>§ 8 Änderungen der AGB</h2>
 <p>Der Anbieter behält sich vor, diese AGB künftig zu ändern, sofern dies aufgrund von rechtlichen oder technischen Änderungen erforderlich ist. Der Nutzer wird über Änderungen rechtzeitig innerhalb der App oder per E-Mail informiert. Stimmt der Nutzer den geänderten AGB nicht zu, kann er die App nach Ablauf seines aktuellen Abrechnungszeitraums möglicherweise nicht weiter nutzen.</p>
 <h2>§ 9 Schlussbestimmungen</h2>
@@ -105,22 +145,21 @@
 </div>
 
 </div>
+</div>
 </main>
 <footer class="site-footer">
 <div class="footer-in">
 <div class="footer-grid">
 <div class="footer-brand">
 <img src="/assets/img/logo-icon-dunkel.png" width="160" height="199" loading="lazy" alt="MRGstudios Icon auf schwarzem Hintergrund: MRG-Monogramm im Farbverlauf mit leichtem Leuchten">
-<p>MRGstudios, Einzelunternehmen. Doomscroll: Erst bewegen, dann scrollen.</p>
+<p>MRGstudios, Einzelunternehmen. Apps: Doomscroll und Mehr oder Weniger.</p>
 </div>
 <nav aria-label="Weitere Seiten" class="footer-nav">
 <div class="footer-col">
-<h2 class="footer-title">Doomscroll</h2>
+<h2 class="footer-title">Apps</h2>
 <ul class="footer-links">
-<li><a href="/projekte/">Doomscroll</a></li>
-<li><a href="/neues/">Updates</a></li>
-<li><a href="/faq/">FAQ</a></li>
-<li><a href="/#download">Download</a></li>
+<li><a href="/doomscroll/">Doomscroll</a></li>
+<li><a href="/mehr-oder-weniger/">Mehr oder Weniger</a></li>
 </ul>
 </div>
 <div class="footer-col">
@@ -128,7 +167,9 @@
 <ul class="footer-links">
 <li><a href="/impressum/">Impressum</a></li>
 <li><a href="/datenschutz/">Datenschutz</a></li>
-<li><a href="/app-datenschutz/">App-Datenschutz</a></li>
+<li><a href="/app-datenschutz/doomscroll/">Datenschutz Doomscroll-App</a></li>
+<li><a href="/app-datenschutz/mehr-oder-weniger/">Datenschutz Mehr-oder-Weniger-App</a></li>
+<li><a href="/app-datenschutz/">Alle App-Datenschutzerklärungen</a></li>
 <li><a href="/agbs-doomscroll/" aria-current="page">AGB Doomscroll</a></li>
 </ul>
 </div>

@@ -2,30 +2,58 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.mrgstudios.de/</loc>
-    <lastmod>2026-10-03</lastmod>
+    <lastmod>2026-10-04</lastmod>
   </url>
   <url>
-    <loc>https://www.mrgstudios.de/projekte/</loc>
-    <lastmod>2026-10-03</lastmod>
+    <loc>https://www.mrgstudios.de/doomscroll/</loc>
+    <lastmod>2026-10-04</lastmod>
   </url>
   <url>
-    <loc>https://www.mrgstudios.de/faq/</loc>
-    <lastmod>2026-10-03</lastmod>
+    <loc>https://www.mrgstudios.de/doomscroll/details/</loc>
+    <lastmod>2026-10-04</lastmod>
+  </url>
+  <url>
+    <loc>https://www.mrgstudios.de/doomscroll/faq/</loc>
+    <lastmod>2026-10-04</lastmod>
+  </url>
+  <url>
+    <loc>https://www.mrgstudios.de/mehr-oder-weniger/</loc>
+    <lastmod>2026-10-04</lastmod>
+  </url>
+  <url>
+    <loc>https://www.mrgstudios.de/mehr-oder-weniger/konto-loeschen/</loc>
+    <lastmod>2026-10-04</lastmod>
   </url>
   <url>
     <loc>https://www.mrgstudios.de/neues/</loc>
-    <lastmod>2026-10-03</lastmod>
+    <lastmod>2026-10-04</lastmod>
   </url>
   <url>
     <loc>https://www.mrgstudios.de/kontakt/</loc>
-    <lastmod>2026-10-03</lastmod>
+    <lastmod>2026-10-04</lastmod>
   </url>
   <url>
     <loc>https://www.mrgstudios.de/agbs-doomscroll/</loc>
-    <lastmod>2026-10-03</lastmod>
+    <lastmod>2026-10-04</lastmod>
   </url>
   <url>
     <loc>https://www.mrgstudios.de/app-datenschutz/</loc>
-    <lastmod>2026-10-03</lastmod>
+    <lastmod>2026-10-04</lastmod>
+  </url>
+  <url>
+    <loc>https://www.mrgstudios.de/app-datenschutz/doomscroll/</loc>
+    <lastmod>2026-10-04</lastmod>
+  </url>
+  <url>
+    <loc>https://www.mrgstudios.de/app-datenschutz/mehr-oder-weniger/</loc>
+    <lastmod>2026-10-04</lastmod>
+  </url>
+  <url>
+    <loc>https://www.mrgstudios.de/impressum/</loc>
+    <lastmod>2026-10-04</lastmod>
+  </url>
+  <url>
+    <loc>https://www.mrgstudios.de/datenschutz/</loc>
+    <lastmod>2026-10-04</lastmod>
   </url>
 </urlset>
