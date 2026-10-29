@@ -287,7 +287,7 @@
 <div class="mrg-facts">
 <div class="mrg-fact"><p>Kamerabilder werden weder gespeichert noch übertragen. Die Rohdaten des Schrittzählers werden lokal auf deinem Gerät verarbeitet. Auf Android wird außerdem der Nutzungszugriff, mit dem Doomscroll erkennt, welche App geöffnet wird, lokal auf deinem Gerät verarbeitet.</p></div>
 <div class="mrg-fact"><p>Für die Bestenliste werden dein selbst erstellter Anzeigename, deine Schrittzahl, Übungswiederholungen und Punkte über Google Firebase abgeglichen. Die Schrittzahl wird dafür also übertragen. Laut Datenschutzerklärung der App sind diese Daten vor dem Hochladen verschlüsselt, und nur Personen mit deinem Einladungslink können sie entschlüsseln. Die verschlüsselten Datensätze sind einer Nutzer-ID zugeordnet, die deinem Gerät zugeordnet werden kann.</p></div>
-<div class="mrg-fact"><p>Die Anmeldung erfolgt über eine zufällige Nutzer-ID (Firebase Authentication), ohne Klarnamen und ohne E-Mail. Es gibt keine Analyse- oder Absturzdienste. Die Daten werden nicht für Werbung genutzt.</p></div>
+<div class="mrg-fact"><p>Die Anmeldung erfolgt über eine zufällige Nutzer-ID (Firebase Authentication), ohne Klarnamen und ohne E-Mail. In der App gibt es keine Analyse- oder Absturzdienste. Die Daten werden nicht für Werbung genutzt.</p></div>
 <div class="mrg-fact"><p>Eine Löschung deines gesamten Bestenliste-Datensatzes ist auf Anfrage per E-Mail möglich, solange die App noch auf deinem Gerät installiert ist. Nenne in der E-Mail deine Support-ID (siehe FAQ „<a href="/doomscroll/faq/#loeschung">Kann ich meine Daten löschen?</a>“). Die <a href="/app-datenschutz/doomscroll/">Datenschutzerklärung der App</a> (Englisch, mit deutscher Übersetzung) ist in der App verlinkt. Die <a href="/datenschutz/">Datenschutzerklärung der Website</a> gilt für die Website.</p></div>
 </div>
 </div>
@@ -305,6 +305,56 @@
 </div>
 </div>
 </section>
+
+<section class="mrg-sec mrg-bg-cream" id="fernsehen" aria-labelledby="h-tv">
+<div class="mrg-bar" aria-hidden="true"></div>
+<h2 id="h-tv">Doomscroll im Fernsehen</h2>
+<p class="mrg-lead">RegioTV Bodensee hat über Doomscroll berichtet: „Erst Liegestütze, dann Instagram: 17-Jähriger entwickelt App gegen Dauerscrollen“. Der Beitrag steht seit dem 28.10.2026 in der Mediathek.</p>
+<div id="regiotv-box" style="margin:24px 0">
+<div id="regiotv-platz" hidden><div style="aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;text-align:center;padding:16px;border:1px dashed var(--muted);border-radius:16px;background:var(--cream)"><p class="mrg-small" id="regiotv-status" role="status" style="margin:0">Der Beitrag wird in wenigen Sekunden geladen.</p></div></div>
+<template id="regiotv-embed"><div data-cmms-embed-id="555317/pel1ksobq6uuu/zgcp94hllds7y" data-cmms-base="www.regio-tv.de"></div><script async src="//www.regio-tv.de/wp-content/plugins/cmms/assets/dist/static/cmms.media.embed.js"></script></template>
+</div>
+<noscript><p><strong>Ohne JavaScript lässt sich der Beitrag hier nicht anzeigen.</strong> Du findest ihn in der <a href="https://www.regio-tv.de/mediathek/video/erst-liegestuetze-dann-instagram-17-jaehriger-entwickelt-app-gegen-dauerscrollen/" rel="noopener">Mediathek von RegioTV Bodensee</a>.</p></noscript>
+<p>Vielen Dank an das Team von RegioTV Bodensee für den Beitrag über meine App "Doomscroll". Weitere Beiträge aus der Region gibt es in der Mediathek von RegioTV Bodensee: <a href="https://www.regio-tv.de/regio-tv-bodensee" rel="noopener">https://www.regio-tv.de/regio-tv-bodensee</a></p>
+<p class="mrg-small">Der Beitrag wird von RegioTV Bodensee bereitgestellt und wenige Sekunden nach dem Aufruf dieser Seite automatisch geladen. Dabei wird eine Verbindung zu Servern von RegioTV hergestellt, und es werden unter anderem deine IP-Adresse und die Adresse dieser Seite übertragen. RegioTV misst dabei auch die Wiedergabe. Mehr dazu steht in der <a href="/datenschutz/#regiotv">Datenschutzerklärung</a>.</p>
+</section>
+<script>
+(function () {
+  var platz = document.getElementById('regiotv-platz');
+  var box = document.getElementById('regiotv-box');
+  var tpl = document.getElementById('regiotv-embed');
+  var status = document.getElementById('regiotv-status');
+  if (!platz || !box || !tpl || !tpl.content) { return; }
+  platz.hidden = false;
+  function laden() {
+    if (box.getAttribute('data-geladen')) { return; }
+    box.setAttribute('data-geladen', '1');
+    // Der Einbettungscode von RegioTV bleibt unveraendert: er liegt inaktiv im <template> und wird erst jetzt eingesetzt.
+    // Skripte werden dazu neu erzeugt (Attribute und Adresse unveraendert), weil kopierte Skripte sonst nicht laufen.
+    var nodes = tpl.content.childNodes;
+    for (var i = 0; i < nodes.length; i++) {
+      var n = nodes[i];
+      if (n.nodeType === 1 && n.tagName === 'SCRIPT') {
+        var s = document.createElement('script');
+        for (var j = 0; j < n.attributes.length; j++) { s.setAttribute(n.attributes[j].name, n.attributes[j].value); }
+        if (n.textContent) { s.textContent = n.textContent; }
+        s.onload = function () { platz.hidden = true; };
+        s.onerror = function () {
+          status.textContent = 'Der Beitrag konnte nicht geladen werden. Du findest ihn in der ';
+          var a = document.createElement('a');
+          a.href = 'https://www.regio-tv.de/mediathek/video/erst-liegestuetze-dann-instagram-17-jaehriger-entwickelt-app-gegen-dauerscrollen/'; a.rel = 'noopener'; a.textContent = 'Mediathek von RegioTV Bodensee';
+          status.appendChild(a); status.appendChild(document.createTextNode('.'));
+        };
+        box.appendChild(s);
+      } else {
+        box.appendChild(document.importNode(n, true));
+      }
+    }
+  }
+  function planen() { window.setTimeout(laden, 3000); }
+  if (document.readyState === 'complete') { planen(); } else { window.addEventListener('load', planen); }
+})();
+</script>
 
 <section class="mrg-sec mrg-deep mrg-cta" aria-labelledby="h-cta">
 <h2 id="h-cta">Starte mit 5 Tagen Test</h2>
