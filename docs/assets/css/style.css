@@ -518,3 +518,19 @@ h1,h2{hyphens:manual;-webkit-hyphens:manual;overflow-wrap:break-word}
 .social-inline{margin:0 0 1em}
 .social-inline a{white-space:nowrap}
 /* ===== Medien, Person, Social: Ende ===== */
+
+/* ===== Unsere Services: Anfang ===== */
+.svc-kicker{margin:0 0 8px;font-size:.875rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--violet)}
+.svc-offer{margin:20px 0 0;max-width:60ch}
+.svc-cards{list-style:none;margin:24px 0 0;padding:0}
+.svc-cards .mrg-card h3{margin-bottom:8px}
+.mrg-steps.steps-4 li p{overflow-wrap:break-word}
+.footer-col .footer-links+.footer-title{margin-top:20px}
+@container main (min-width:552px){
+  .mrg-steps.steps-4{grid-template-columns:1fr 1fr;gap:20px}
+}
+@container main (min-width:852px){
+  .mrg-steps.steps-4{grid-template-columns:1fr 1fr;gap:24px}
+  .svc-cards{grid-template-columns:repeat(3,1fr)}
+}
+/* ===== Unsere Services: Ende ===== */
