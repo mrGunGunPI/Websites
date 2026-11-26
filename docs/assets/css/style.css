@@ -508,6 +508,7 @@ h1,h2{hyphens:manual;-webkit-hyphens:manual;overflow-wrap:break-word}
 .press-meta{margin:0;font-size:.9375rem;color:var(--muted)}
 .press-card .mrg-btn{margin-top:auto}
 .press-video{margin:24px 0}
+.press-video-frame{display:block;width:100%;height:auto;aspect-ratio:16/9;border:0;border-radius:16px}
 .press-video-ph{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;min-height:220px;padding:24px 16px;text-align:center;border:1px dashed var(--muted);border-radius:16px;background:var(--white)}
 .press-video-ph p{margin:0;max-width:60ch}
 /* Social-Links in der Fusszeile (eigene Zeile unter den Spalten) und im Inhalt */
