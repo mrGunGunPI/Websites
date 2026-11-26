@@ -489,6 +489,7 @@ h1,h2{hyphens:manual;-webkit-hyphens:manual;overflow-wrap:break-word}
 .person img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;border-radius:20px;border:1px solid var(--line);background:var(--soft-lilac)}
 .person figcaption{font-size:.9375rem;line-height:1.4;color:var(--muted)}
 .person figcaption strong{display:block;font-size:1.25rem;line-height:1.2;color:var(--navy)}
+.person figcaption .photo-credit{display:block;margin-top:4px;font-size:.8125rem}
 .press-strip{margin:4px 0 0;font-size:.9375rem;line-height:1.5;color:var(--muted)}
 .press-strip-label{font-weight:700;color:var(--navy)}
 @container main (min-width:552px){
