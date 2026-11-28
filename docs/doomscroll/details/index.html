@@ -200,7 +200,7 @@
 <ul>
 <li><strong>Kamera-Erkennung:</strong> Sie zählt Liegestütze, Hampelmänner und Kniebeugen in Echtzeit.</li>
 <li><strong>Sofortige Gutschrift:</strong> Ist eine Übung abgeschlossen, wird die Zeit sofort gutgeschrieben. Bei Abbruch gibt es nichts.</li>
-<li><strong>Beispiele:</strong> 5 Liegestütze = +20 Minuten, 10 Hampelmänner = +10 Minuten, 50.000 Schritte = +25 Minuten.</li>
+<li><strong>Beispiele:</strong> 5 Liegestütze = +15 Minuten, 10 Hampelmänner = +10 Minuten (Standardstufe; die Stufe lässt sich in den Elterneinstellungen ändern), 50.000 Schritte = +25 Minuten.</li>
 <li><strong>Limit:</strong> Höchstens 150 Minuten können gleichzeitig auf der Uhr stehen. Für das Zeitguthaben gilt nur diese Obergrenze.</li>
 <li><strong>Punktesystem:</strong> 1 Punkt = 1 Minute, bis zu 150 Punkte, Einlösen per Schieberegler.</li>
 <li><strong>Tägliche Schrittziele,</strong> zum Beispiel Bronze (1.500 Schritte, +5 Punkte), Silber (3.000 Schritte, +10 Punkte) und Diamant (10.000 Schritte, +20 Punkte).</li>
@@ -214,7 +214,7 @@
 <ul>
 <li>Bestenliste mit Freunden.</li>
 <li>„Duell Arena“: eine Herausforderung mit Belohnung.</li>
-<li>Profil mit Anzeigenamen. Du erstellst ihn selbst, und er wird nur mit Personen geteilt, die deinen selbst erstellten Einladungslink anklicken.</li>
+<li>Profil mit Anzeigenamen. Du erstellst ihn selbst. Ihn sehen Personen, die deinen Einladungslink haben, Personen, deren Einladungslink du in der App öffnest, und deine Duellgegner.</li>
 <li>Wettkampf-Benachrichtigungen.</li>
 </ul></article>
 <article class="mrg-card"><h3>Für Eltern</h3>
@@ -296,10 +296,10 @@
 <div class="mrg-facts">
 <div class="mrg-fact"><p><strong>Kamera:</strong> Die Kamera-Erkennung zählt deine Übungen. Kamerabilder werden weder gespeichert noch übertragen.</p></div>
 <div class="mrg-fact"><p><strong>Lokal auf deinem Gerät:</strong> Die Rohdaten des Schrittzählers werden lokal auf deinem Gerät verarbeitet. Auf Android wird außerdem der Nutzungszugriff, mit dem Doomscroll erkennt, welche App geöffnet wird, lokal auf deinem Gerät verarbeitet.</p></div>
-<div class="mrg-fact"><p><strong>Bestenliste:</strong> Dein selbst erstellter Anzeigename, deine Schrittzahl, Übungswiederholungen und Punkte werden über Google Firebase abgeglichen. Die Schrittzahl wird dafür übertragen. Laut Datenschutzerklärung der App sind sie vor dem Hochladen verschlüsselt, und nur Personen mit deinem Einladungslink können sie entschlüsseln. Die verschlüsselten Datensätze sind einer Nutzer-ID zugeordnet, die deinem Gerät zugeordnet werden kann.</p></div>
+<div class="mrg-fact"><p><strong>Bestenliste und Duelle:</strong> Dein Anzeigename, deine Schrittzahl, Übungswiederholungen und Punkte werden über Google Firebase abgeglichen, auch automatisch im Hintergrund, selbst wenn du die Bestenliste nie öffnest. Der Bestenlisten-Eintrag wird vor dem Hochladen verschlüsselt, eine Ende-zu-Ende-Verschlüsselung ist das aber nicht. Duelldaten und eine Eltern-PIN, falls du eine festlegst, werden ohne Verschlüsselung durch die App gespeichert. Die Daten sind einer zufälligen Nutzer-ID zugeordnet, die deinem Gerät zugeordnet werden kann. Wo Altersgesetze gelten und der App-Store der App ein Alter unter 13 Jahren meldet, stehen Bestenliste und Duelle in App-Versionen mit Altersprüfung nicht zur Verfügung.</p></div>
 <div class="mrg-fact"><p><strong>Anmeldung:</strong> Die Anmeldung erfolgt über eine zufällige Nutzer-ID (Firebase Authentication), ohne Klarnamen und ohne E-Mail. Die ID wird zusammen mit den Bestenliste-Daten bei Google Firebase gespeichert.</p></div>
-<div class="mrg-fact"><p><strong>Dienste:</strong> Es gibt keine Analyse- oder Absturzdienste. Die Daten werden nicht für Werbung genutzt. Die Bestenliste-Daten liegen bei Google Firebase.</p></div>
-<div class="mrg-fact"><p><strong>Löschung:</strong> Eine Löschung deines gesamten Bestenliste-Datensatzes ist auf Anfrage per E-Mail möglich, solange die App noch auf deinem Gerät installiert ist. Nenne in der E-Mail deine Support-ID (siehe FAQ „<a href="/doomscroll/faq/#loeschung">Kann ich meine Daten löschen?</a>“).</p></div>
+<div class="mrg-fact"><p><strong>Dienste:</strong> Wir selbst setzen keine Analyse- oder Absturzdienste ein; auf Android kann Googles Bibliothek zur Übungserkennung (ML Kit) technische Diagnosedaten an Google senden. Die Daten werden nicht für Werbung genutzt. Die Bestenliste-Daten liegen bei Google Firebase.</p></div>
+<div class="mrg-fact"><p><strong>Löschung:</strong> Auf iOS kannst du deine Daten mit „Meine Daten löschen“ vom Server entfernen (in den Elterneinstellungen mit Eltern-PIN oder unten auf dem Kaufbildschirm). Auf Android und iOS löschen wir sie außerdem auf Anfrage per E-Mail; nenne dafür deine Support-ID. Solange die App installiert bleibt, lädt sie Daten erneut hoch: Notiere dir die ID und lösche die App. Auf Android ist die ID nach Ablauf der Testphase ohne Kauf nicht mehr sichtbar, notiere sie vorher. Mehr dazu in der FAQ „<a href="/doomscroll/faq/#loeschung">Kann ich meine Daten löschen?</a>“.</p></div>
 <div class="mrg-fact"><p><strong>Mehr Details:</strong> Die <a href="/app-datenschutz/doomscroll/">Datenschutzerklärung der App</a> (Englisch, mit deutscher Übersetzung) ist in der App verlinkt. Die <a href="/datenschutz/">Datenschutzerklärung der Website</a> gilt für die Website. In den Stores gelten deren Bestimmungen.</p></div>
 </div>
 </div>

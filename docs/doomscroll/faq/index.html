@@ -128,7 +128,7 @@
 <details>
 <summary>Welche Übungen und Aktivitäten gibt es?</summary>
 <div>
-<p>Doomscroll zählt Liegestütze, Hampelmänner und Kniebeugen, außerdem Schritte. Die Kamera-Erkennung zählt die Übungen in Echtzeit. Schließt du eine Übung ab, wird die Zeit sofort gutgeschrieben. Brichst du die Übung vorher ab, gibt es nichts. Beispiele für verdiente Zeit: 5 Liegestütze bringen sofort +20 Minuten, 10 Hampelmänner +10 Minuten, 50.000 Schritte +25 Minuten. Es können höchstens 150 Minuten gleichzeitig auf der Uhr stehen. Für das Zeitguthaben auf der Uhr gilt nur diese Obergrenze.</p>
+<p>Doomscroll zählt Liegestütze, Hampelmänner und Kniebeugen, außerdem Schritte. Die Kamera-Erkennung zählt die Übungen in Echtzeit. Schließt du eine Übung ab, wird die Zeit sofort gutgeschrieben. Brichst du die Übung vorher ab, gibt es nichts. Beispiele für verdiente Zeit: 5 Liegestütze bringen sofort +15 Minuten, 10 Hampelmänner +10 Minuten (Standardstufe; die Stufe lässt sich in den Elterneinstellungen ändern), 50.000 Schritte +25 Minuten. Es können höchstens 150 Minuten gleichzeitig auf der Uhr stehen. Für das Zeitguthaben auf der Uhr gilt nur diese Obergrenze.</p>
 <p>Zusätzlich sammelst du Punkte über tägliche Schrittziele und Sport-Errungenschaften. 1 Punkt entspricht 1 Minute, maximal 150 Punkte. Du löst Punkte mit einem Schieberegler ein. Beispiele: Bronze (1.500 Schritte) bringt +5 Punkte, Diamant (10.000 Schritte) +20 Punkte, 50 Liegestütze +25 Punkte.</p>
 </div>
 </details>
@@ -147,14 +147,14 @@
 <details>
 <summary>Was sind Bestenliste und Duell Arena?</summary>
 <div>
-<p>Die Bestenliste vergleicht dich mit deinen Freunden. Deinen Anzeigenamen erstellst du selbst. Er wird nur mit Personen geteilt, die den von dir erstellten Einladungslink anklicken, um dich als Freund hinzuzufügen. In der Duell Arena forderst du jemanden heraus, für das Duell gibt es eine Belohnung. Wettkampf-Benachrichtigungen halten dich auf dem Laufenden. Für die Bestenliste werden Anzeigename, Schritte, Übungswiederholungen und Punkte über Google Firebase abgeglichen (mehr dazu in der Antwort zu den Daten).</p>
+<p>Die Bestenliste vergleicht dich mit deinen Freunden. Deinen Anzeigenamen erstellst du selbst. Ihn sehen Personen, die deinen Einladungslink haben, Personen, deren Einladungslink du in der App öffnest, und deine Duellgegner. In der Duell Arena forderst du jemanden heraus, für das Duell gibt es eine Belohnung. Wettkampf-Benachrichtigungen halten dich auf dem Laufenden. Für die Bestenliste werden Anzeigename, Schritte, Übungswiederholungen und Punkte über Google Firebase abgeglichen (mehr dazu in der Antwort zu den Daten). Wo Altersgesetze gelten und der App-Store der App ein Alter unter 13 Jahren meldet, stehen Bestenliste und Duelle in App-Versionen mit Altersprüfung nicht zur Verfügung.</p>
 </div>
 </details>
 <details>
 <summary>Welche Daten nutzt die App, und werden Kamerabilder gespeichert?</summary>
 <div>
-<p>Kamerabilder werden weder gespeichert noch übertragen. Die Rohdaten des Schrittzählers werden lokal auf deinem Gerät verarbeitet. Auf Android wird außerdem der Nutzungszugriff lokal auf deinem Gerät verarbeitet. Für die Bestenliste werden dein selbst erstellter Anzeigename, deine Schrittzahl, Übungswiederholungen und Punkte über Google Firebase abgeglichen. Die Schrittzahl wird dafür also übertragen. Laut Datenschutzerklärung der App sind diese Daten vor dem Hochladen verschlüsselt, und nur Personen mit deinem Einladungslink können sie entschlüsseln. Die verschlüsselten Datensätze sind einer Nutzer-ID zugeordnet, die deinem Gerät zugeordnet werden kann. Die Anmeldung erfolgt über eine zufällige Nutzer-ID (Firebase Authentication), ohne Klarnamen und ohne E-Mail. Es gibt keine Analyse- oder Absturzdienste. Die Daten werden nicht für Werbung genutzt.</p>
-<p>Eine Löschung deines gesamten Bestenliste-Datensatzes ist auf Anfrage per E-Mail möglich, solange die App noch auf deinem Gerät installiert ist. Nenne in der E-Mail deine Support-ID (siehe FAQ „<a href="#loeschung">Kann ich meine Daten löschen?</a>“).</p>
+<p>Kamerabilder werden weder gespeichert noch übertragen. Die Rohdaten des Schrittzählers werden lokal auf deinem Gerät verarbeitet. Auf Android wird außerdem der Nutzungszugriff lokal auf deinem Gerät verarbeitet. Für Bestenliste und Duelle werden dein Anzeigename, deine Schrittzahl, Übungswiederholungen und Punkte über Google Firebase abgeglichen, auch automatisch im Hintergrund, selbst wenn du die Bestenliste nie öffnest. Der Bestenlisten-Eintrag wird vor dem Hochladen verschlüsselt, eine Ende-zu-Ende-Verschlüsselung ist das aber nicht. Duelldaten und eine Eltern-PIN, falls du eine festlegst, werden ohne Verschlüsselung durch die App gespeichert. Die Daten sind einer zufälligen Nutzer-ID zugeordnet, die deinem Gerät zugeordnet werden kann. Die Anmeldung erfolgt über eine zufällige Nutzer-ID (Firebase Authentication), ohne Klarnamen und ohne E-Mail. Wir selbst setzen keine Analyse- oder Absturzdienste ein; auf Android kann Googles Bibliothek zur Übungserkennung (ML Kit) technische Diagnosedaten an Google senden. Die Daten werden nicht für Werbung genutzt.</p>
+<p>Auf iOS kannst du deine Daten mit „Meine Daten löschen“ vom Server entfernen (in den Elterneinstellungen mit Eltern-PIN oder unten auf dem Kaufbildschirm). Auf Android und iOS löschen wir sie außerdem auf Anfrage per E-Mail; nenne dafür deine Support-ID. Solange die App installiert bleibt, lädt sie Daten erneut hoch: Notiere dir die ID und lösche die App. Auf Android ist die ID nach Ablauf der Testphase ohne Kauf nicht mehr sichtbar, notiere sie vorher. Mehr dazu in der FAQ „<a href="#loeschung">Kann ich meine Daten löschen?</a>“.</p>
 <p>Die <a href="/app-datenschutz/doomscroll/">Datenschutzerklärung der App</a> (Englisch, mit deutscher Übersetzung) ist in der App verlinkt. Die <a href="/datenschutz/">Datenschutzerklärung der Website</a> gilt für die Website.</p>
 </div>
 </details>
@@ -188,22 +188,24 @@
 </ul>
 <p class="faq-sub"><strong>Zusätzlich auf iOS</strong></p>
 <ul>
+<li><strong>Apple Health:</strong> nur Lesezugriff auf deine Schritte.</li>
 <li><strong>Freigabe über Apples Schnittstelle zur App-Sperre (Bildschirmzeit):</strong> damit Doomscroll die von dir gewählten Apps sperren kann.</li>
 </ul>
-<p>Die Rohdaten des Schrittzählers werden lokal auf deinem Gerät verarbeitet. Für die Bestenliste werden Anzeigename, Schrittzahl, Wiederholungen und Punkte über Google Firebase abgeglichen. Details stehen in der <a href="/app-datenschutz/doomscroll/">Datenschutzerklärung der App</a> (Englisch, mit deutscher Übersetzung).</p>
+<p>Die Rohdaten des Schrittzählers werden lokal auf deinem Gerät verarbeitet. Für Bestenliste und Duelle werden Anzeigename, Schrittzahl, Wiederholungen und Punkte über Google Firebase abgeglichen, auch automatisch im Hintergrund. Details stehen in der <a href="/app-datenschutz/doomscroll/">Datenschutzerklärung der App</a> (Englisch, mit deutscher Übersetzung).</p>
 </div>
 </details>
 <details>
 <summary>Welche Altersfreigabe hat Doomscroll?</summary>
 <div>
-<p>Im Apple App Store ist Doomscroll ab 9+ freigegeben, bei Google Play für jedes Alter. Den Anzeigenamen für die Bestenliste erstellst du selbst. Er wird nur mit Personen geteilt, die den von dir erstellten Einladungslink anklicken.</p>
+<p>Im Apple App Store ist Doomscroll ab 9+ freigegeben, bei Google Play für jedes Alter. Den Anzeigenamen für die Bestenliste erstellst du selbst. Ihn sehen Personen, die deinen Einladungslink haben, Personen, deren Einladungslink du in der App öffnest, und deine Duellgegner.</p>
 </div>
 </details>
 <details id="loeschung" open>
 <summary>Kann ich meine Daten löschen?</summary>
 <div>
-<p>Ja, auf Anfrage. Die Bestenliste-Daten (Anzeigename, Schrittzahl, Übungswiederholungen, Punkte) sind einer zufälligen Nutzer-ID zugeordnet. Diese ID lässt sich deinem Gerät zuordnen. Laut Datenschutzerklärung der App ist eine Löschung nur auf Anfrage möglich und nur, solange die App noch auf deinem Gerät installiert ist (wegen der Ende-zu-Ende-Verschlüsselung). Wir löschen deinen gesamten Datensatz. Einzelne Werte, zum Beispiel nur die Schrittzahl, lassen sich nicht separat löschen.</p>
-<p><strong>So geht’s:</strong> Schreib an <a href="mailto:Info.MRGstudios@web.de">Info.MRGstudios@web.de</a> und nenne deine Support-ID. Damit identifizieren wir deinen Datensatz. Du findest die Support-ID in der Android-App unter Einstellungen („Deine ID“). Nutzt du iOS, ist der Fundort der Support-ID hier noch nicht beschrieben. Schreib uns in diesem Fall trotzdem, wir klären gemeinsam, wie wir deinen Datensatz identifizieren.</p>
+<p>Ja. Deine Daten auf dem Server sind einer zufälligen Nutzer-ID zugeordnet, die sich deinem Gerät zuordnen lässt. Auf iOS kannst du sie mit „Meine Daten löschen“ selbst entfernen (in den Elterneinstellungen mit Eltern-PIN oder unten auf dem Kaufbildschirm); bereits an andere zugestellte Nachrichten und andere Duelldaten bleiben dabei bestehen. Auf Android und iOS löschen wir außerdem auf Anfrage die Daten, die wir deiner ID zuordnen können. Einzelne Werte innerhalb des verschlüsselten Bestenlisten-Eintrags, zum Beispiel nur die Schrittzahl dort, lassen sich nicht getrennt löschen; wir löschen dann den ganzen Eintrag.</p>
+<p><strong>Wichtig:</strong> Solange die App installiert bleibt, lädt sie Daten erneut hoch. Notiere dir deshalb zuerst deine ID und lösche die App.</p>
+<p><strong>So geht’s:</strong> Schreib an <a href="mailto:Info.MRGstudios@web.de">Info.MRGstudios@web.de</a> und nenne deine Support-ID. Damit identifizieren wir deinen Datensatz. Du findest die Support-ID in der App unter Einstellungen („Deine ID“), auf Android und iOS. Auf Android ist die ID nach Ablauf der Testphase ohne Kauf nicht mehr sichtbar, notiere sie vorher. Wenn du sie nicht mehr sehen kannst, schreib uns trotzdem.</p>
 <p>Für Anfragen zu deinen Daten gelten die gesetzlichen Fristen (Art. 12 DSGVO).</p>
 </div>
 </details>

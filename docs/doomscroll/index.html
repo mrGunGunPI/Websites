@@ -215,9 +215,9 @@
 <div class="mrg-split mrg-split-top">
 <div>
 <h2 id="h-zeit">Zeit verdienen: So viel bringt Bewegung</h2>
-<p>Zeit verdienst du durch körperliche Aktivität. Schließt du eine Übung ab, wird die Zeit sofort gutgeschrieben. Brichst du die Übung vorher ab, wird nichts gutgeschrieben. Das sind Beispiele:</p>
+<p>Zeit verdienst du durch körperliche Aktivität. Schließt du eine Übung ab, wird die Zeit sofort gutgeschrieben. Brichst du die Übung vorher ab, wird nichts gutgeschrieben. Das sind Beispiele (Standardstufe; die Stufe lässt sich in den Elterneinstellungen ändern):</p>
 <ul class="mrg-chips">
-<li>5 Liegestütze abgeschlossen = sofort <strong>+20 Minuten</strong></li>
+<li>5 Liegestütze abgeschlossen = sofort <strong>+15 Minuten</strong></li>
 <li>10 Hampelmänner = <strong>+10 Minuten</strong></li>
 <li>50.000 Schritte = <strong>+25 Minuten</strong></li>
 <li>Kniebeugen zählen ebenfalls.</li>
@@ -248,8 +248,8 @@
 <div class="mrg-split mrg-split-rev">
 <div>
 <h2 id="h-liste">Mit Freunden: Bestenliste &amp; Duelle</h2>
-<p>Vergleiche dich mit Freunden in der Bestenliste. In der „Duell Arena“ startest du eine Herausforderung mit Belohnung. Deinen Anzeigenamen erstellst du selbst. Er wird nur mit Personen geteilt, die den von dir erstellten Einladungslink anklicken, um dich als Freund hinzuzufügen. Wettkampf-Benachrichtigungen halten dich auf dem Laufenden.</p>
-<p>Für die Bestenliste werden Anzeigename, Schritte, Übungswiederholungen und Punkte über Google Firebase abgeglichen. Laut Datenschutzerklärung der App sind sie Ende-zu-Ende-verschlüsselt. Mehr dazu im <a href="#daten">Abschnitt zu deinen Daten</a>.</p>
+<p>Vergleiche dich mit Freunden in der Bestenliste. In der „Duell Arena“ startest du eine Herausforderung mit Belohnung. Deinen Anzeigenamen erstellst du selbst. Ihn sehen Personen, die deinen Einladungslink haben, Personen, deren Einladungslink du in der App öffnest, und deine Duellgegner. Wo Altersgesetze gelten und der App-Store der App ein Alter unter 13 Jahren meldet, stehen Bestenliste und Duelle in App-Versionen mit Altersprüfung nicht zur Verfügung. Wettkampf-Benachrichtigungen halten dich auf dem Laufenden.</p>
+<p>Für Bestenliste und Duelle werden Anzeigename, Schritte, Übungswiederholungen und Punkte über Google Firebase abgeglichen, auch automatisch im Hintergrund. Mehr dazu im <a href="#daten">Abschnitt zu deinen Daten</a>.</p>
 </div>
 <div class="mrg-pair mrg-visual" role="group" aria-label="Bestenliste in der App">
 <figure class="mrg-dev"><div class="mrg-phone"><div class="mrg-screen"><img src="/assets/img/android-bestenliste.jpg" width="720" height="1485" loading="lazy" alt="Doomscroll Android: Bestenliste mit Duell Arena, eigenem Profil und Freundesliste"></div></div><figcaption>Android</figcaption></figure>
@@ -295,9 +295,9 @@
 <h2 id="h-daten">Das passiert mit deinen Daten</h2>
 <div class="mrg-facts">
 <div class="mrg-fact"><p>Kamerabilder werden weder gespeichert noch übertragen. Die Rohdaten des Schrittzählers werden lokal auf deinem Gerät verarbeitet. Auf Android wird außerdem der Nutzungszugriff, mit dem Doomscroll erkennt, welche App geöffnet wird, lokal auf deinem Gerät verarbeitet.</p></div>
-<div class="mrg-fact"><p>Für die Bestenliste werden dein selbst erstellter Anzeigename, deine Schrittzahl, Übungswiederholungen und Punkte über Google Firebase abgeglichen. Die Schrittzahl wird dafür also übertragen. Laut Datenschutzerklärung der App sind diese Daten vor dem Hochladen verschlüsselt, und nur Personen mit deinem Einladungslink können sie entschlüsseln. Die verschlüsselten Datensätze sind einer Nutzer-ID zugeordnet, die deinem Gerät zugeordnet werden kann.</p></div>
-<div class="mrg-fact"><p>Die Anmeldung erfolgt über eine zufällige Nutzer-ID (Firebase Authentication), ohne Klarnamen und ohne E-Mail. In der App gibt es keine Analyse- oder Absturzdienste. Die Daten werden nicht für Werbung genutzt.</p></div>
-<div class="mrg-fact"><p>Eine Löschung deines gesamten Bestenliste-Datensatzes ist auf Anfrage per E-Mail möglich, solange die App noch auf deinem Gerät installiert ist. Nenne in der E-Mail deine Support-ID (siehe FAQ „<a href="/doomscroll/faq/#loeschung">Kann ich meine Daten löschen?</a>“). Die <a href="/app-datenschutz/doomscroll/">Datenschutzerklärung der App</a> (Englisch, mit deutscher Übersetzung) ist in der App verlinkt. Die <a href="/datenschutz/">Datenschutzerklärung der Website</a> gilt für die Website.</p></div>
+<div class="mrg-fact"><p>Für Bestenliste und Duelle werden dein Anzeigename, deine Schrittzahl, Übungswiederholungen und Punkte über Google Firebase abgeglichen, auch automatisch im Hintergrund, selbst wenn du die Bestenliste nie öffnest. Der Bestenlisten-Eintrag wird vor dem Hochladen verschlüsselt, eine Ende-zu-Ende-Verschlüsselung ist das aber nicht. Duelldaten und eine Eltern-PIN, falls du eine festlegst, werden ohne Verschlüsselung durch die App gespeichert. Die Daten sind einer zufälligen Nutzer-ID zugeordnet, die deinem Gerät zugeordnet werden kann.</p></div>
+<div class="mrg-fact"><p>Die Anmeldung erfolgt über eine zufällige Nutzer-ID (Firebase Authentication), ohne Klarnamen und ohne E-Mail. Wir selbst setzen keine Analyse- oder Absturzdienste ein; auf Android kann Googles Bibliothek zur Übungserkennung (ML Kit) technische Diagnosedaten an Google senden. Die Daten werden nicht für Werbung genutzt.</p></div>
+<div class="mrg-fact"><p>Auf iOS kannst du deine Daten mit „Meine Daten löschen“ vom Server entfernen (in den Elterneinstellungen mit Eltern-PIN oder unten auf dem Kaufbildschirm). Auf Android und iOS löschen wir sie außerdem auf Anfrage per E-Mail; nenne dafür deine Support-ID. Solange die App installiert bleibt, lädt sie Daten erneut hoch: Notiere dir die ID und lösche die App. Auf Android ist die ID nach Ablauf der Testphase ohne Kauf nicht mehr sichtbar, notiere sie vorher. Mehr dazu in der FAQ „<a href="/doomscroll/faq/#loeschung">Kann ich meine Daten löschen?</a>“. Die <a href="/app-datenschutz/doomscroll/">Datenschutzerklärung der App</a> (Englisch, mit deutscher Übersetzung) ist in der App verlinkt. Die <a href="/datenschutz/">Datenschutzerklärung der Website</a> gilt für die Website.</p></div>
 </div>
 </div>
 </section>
